@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 console.log("------- Meilleure calculatrice du monde -------");
 
 function calcCmd() {
-    var cmd = readlineSync.question("Quelle opération voulez-vous faire ? (add, sub, mul, div) ");
+    var cmd = readlineSync.question("Quelle opération voulez-vous faire ? (add, sub, mul, div, mod) ");
 
     var nb1 = parseInt(readlineSync.question("Premier nombre "));
     var nb2 = parseInt(readlineSync.question("Deuxième nombre "));
@@ -21,6 +21,14 @@ function calcCmd() {
         result = nb1 - nb2;
     } else if (cmd == "mul") {
         result = nb1 * nb2;
+    } else if (cmd == "mod") {
+        result = nb1 % nb2;
+        if (nb2 !== 0) {
+            result = nb1 / nb2;
+        } else {
+            console.log("Modulo par zéro impossible.");
+            return;
+        }
     } else if (cmd == "div") {
         if (nb2 !== 0) {
             result = nb1 / nb2;
