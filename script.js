@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-console.log("------- Meilleure calculatrice du monde -------");
+console.log("------- Meilleure dinosaure du monde -------");
 
 function calcCmd() {
     var cmd = readlineSync.question("Quelle opération voulez-vous faire ? (add, sub, mul, div, mod) ");
