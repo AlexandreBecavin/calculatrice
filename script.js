@@ -1,0 +1,1 @@
+console.log("------- Meilleur calculatrice du monde -------");
