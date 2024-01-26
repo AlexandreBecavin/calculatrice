@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-console.log("------- Meilleure calculatrice du monde -------");
+console.log("------- Meilleure calculatrice scientifique du monde -------");
 
 function isNumeric(value) {
     return /^[0-9]+$/.test(value);
